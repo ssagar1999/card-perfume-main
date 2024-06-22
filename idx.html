@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid red;
+            width: 100%;
+            height: 75vh;
+            background-color: antiquewhite;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+        }
+
+        p{
+            background-color: aquamarine;
+            padding: 30px;
+
+            
+        }
+        p:nth-child(even){
+            background-color: red;
+
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <p class="child-1">1</p>
+        <p class="child-2">2</p>
+        <p class="child-3">3</p>
+        <p class="child-4">4</p>
+        <p class="child-5">5</p>
+        <p class="child-6">6</p>
+        <p class="child-7">7</p>
+        <p class="child-8">8</p>
+        <p class="child-9">9</p>
+    </div>
+    
+</body>
+</html>
