@@ -1,41 +1,119 @@
-// // let str = 'hello world'
-// // let str2 = 'world'
-// // // let result = str.charAt(1)
+// // // // let a = 9; //stack
 
-// // // let result = str.charCodeAt(3)
+// // // // let b = 89;
 
 
-// // // let result = str.concat(str2);
-// // // let result = str + str2;
-// // // let result = str.includes('O')
-
-// // // let result = str.indexOf('o');
-
-// // // let result = str.repeat(10);
-
-// // // let result = str.replace('ll', 'T')
-
-// // // let result  = str.slice(3,8)
-// // // let str8 = 'i my name is shubham';
-// // // let str5 = '2020-5-3'
-// // // let result = str8.substring(2,8);
-// // // console.log(result);
-
-// // let name = '     sonu     ';
-// // // let result = name.trimEnd();
-// // let res = name.trim()
-// // // let captalName = name.toUpperCase();
-
-// // console.log(name, 'space', res)
+// // // // let obj1 = { a : 56}
 
 
-// let arr = [1,2,3,4,5,6]
-// //for of loop
+// // // // let obj2 = obj1;
 
-// for(let val of arr){
-//     console.log(val);
+// // // // obj2.a = 1212;
+
+// // // // console.log(obj1, obj2)
+
+
+
+// // // // let obj1 = {key1:89, key2:23}
+// // // // let obj2 = obj1;
+
+
+// // // // obj2.key1 = 1212;
+
+// // // // console.log(obj1, obj2)
+
+
+// // // let apple = function Apple(name){
+
+// // //     let nameString = 'my name is  :' + name;
+
+// // //     console.log(nameString)
+
+// // // }
+
+
+// // // let newFunc =  () => {
+// // //     console.log('arrow function')
+// // // }
+
+// // // let addstring = (a,b) =>{
+// // //   return a+b;
+// // // }
+
+// // // apple('shubham')
+// // // apple('Ayush')
+// // // apple('Pavan')
+// // // apple('Rohit')
+
+// // // newFunc()
+
+// //  // cb is my callback function passes as argument
+// // function a(cb){
+// //     let num = 90 + 90;
+
+// //     let num2 = 180-90;
+
+// //     cb()
+// // }
+
+// // function b(){
+
+// // console.log('function b is called')
+// // }
+
+
+// // function c(){
+// //     console.log('function c is called')
+// // }
+
+// // function d(){
+// //     console.log('function d is called')
+// // }
+// // a(b)
+// // a(c)
+// // a(d)
+
+// // function Main(cb1, cb2, n1, n2){
+// //     console.log('main function is called');
+// //     console.log(cb1, cb2, n1,n2)
+// //     cb1()
+// //     cb2()
+// // }
+
+// // function yo(){
+// //     console.log('s function is called')
+// // }
+// // function y(){
+// //     console.log('no function is called')
+// // }
+
+// // Main(yo, y, 3,5)
+
+
+// function Main(a,b,c){
+//     let num = a(b,3);
+//     let num2 = c(b,9);
+//     console.log(num, num2)
 // }
 
-// for(let i = 0; i<arr.length; i++){
-//     console.log(arr[i]);
+// function add(n1,n2){
+//     return n1+n2
+
 // }
+
+// Main(sub,100,78)
+
+
+let student = {
+    'my name': 'sai',
+    rollno:37987983,
+    giveExam :function(){
+        console.log('exam is given')
+    }, 
+
+ 
+}
+
+console.log(student['my name'])
+
+console.log(student.name,  student.rollno)
