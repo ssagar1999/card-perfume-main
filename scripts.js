@@ -1,157 +1,206 @@
-// // // // // // // let a = 9; //stack
+// // // // // // // // // let a = 9; //stack
 
-// // // // // // // let b = 89;
-
-
-// // // // // // // let obj1 = { a : 56}
+// // // // // // // // // let b = 89;
 
 
-// // // // // // // let obj2 = obj1;
-
-// // // // // // // obj2.a = 1212;
-
-// // // // // // // console.log(obj1, obj2)
+// // // // // // // // // let obj1 = { a : 56}
 
 
+// // // // // // // // // let obj2 = obj1;
 
-// // // // // // // let obj1 = {key1:89, key2:23}
-// // // // // // // let obj2 = obj1;
+// // // // // // // // // obj2.a = 1212;
 
-
-// // // // // // // obj2.key1 = 1212;
-
-// // // // // // // console.log(obj1, obj2)
+// // // // // // // // // console.log(obj1, obj2)
 
 
-// // // // // // let apple = function Apple(name){
 
-// // // // // //     let nameString = 'my name is  :' + name;
+// // // // // // // // // let obj1 = {key1:89, key2:23}
+// // // // // // // // // let obj2 = obj1;
 
-// // // // // //     console.log(nameString)
+
+// // // // // // // // // obj2.key1 = 1212;
+
+// // // // // // // // // console.log(obj1, obj2)
+
+
+// // // // // // // // let apple = function Apple(name){
+
+// // // // // // // //     let nameString = 'my name is  :' + name;
+
+// // // // // // // //     console.log(nameString)
+
+// // // // // // // // }
+
+
+// // // // // // // // let newFunc =  () => {
+// // // // // // // //     console.log('arrow function')
+// // // // // // // // }
+
+// // // // // // // // let addstring = (a,b) =>{
+// // // // // // // //   return a+b;
+// // // // // // // // }
+
+// // // // // // // // apple('shubham')
+// // // // // // // // apple('Ayush')
+// // // // // // // // apple('Pavan')
+// // // // // // // // apple('Rohit')
+
+// // // // // // // // newFunc()
+
+// // // // // // //  // cb is my callback function passes as argument
+// // // // // // // function a(cb){
+// // // // // // //     let num = 90 + 90;
+
+// // // // // // //     let num2 = 180-90;
+
+// // // // // // //     cb()
+// // // // // // // }
+
+// // // // // // // function b(){
+
+// // // // // // // console.log('function b is called')
+// // // // // // // }
+
+
+// // // // // // // function c(){
+// // // // // // //     console.log('function c is called')
+// // // // // // // }
+
+// // // // // // // function d(){
+// // // // // // //     console.log('function d is called')
+// // // // // // // }
+// // // // // // // a(b)
+// // // // // // // a(c)
+// // // // // // // a(d)
+
+// // // // // // // function Main(cb1, cb2, n1, n2){
+// // // // // // //     console.log('main function is called');
+// // // // // // //     console.log(cb1, cb2, n1,n2)
+// // // // // // //     cb1()
+// // // // // // //     cb2()
+// // // // // // // }
+
+// // // // // // // function yo(){
+// // // // // // //     console.log('s function is called')
+// // // // // // // }
+// // // // // // // function y(){
+// // // // // // //     console.log('no function is called')
+// // // // // // // }
+
+// // // // // // // Main(yo, y, 3,5)
+
+
+// // // // // // function Main(a,b,c){
+// // // // // //     let num = a(b,3);
+// // // // // //     let num2 = c(b,9);
+// // // // // //     console.log(num, num2)
+// // // // // // }
+
+// // // // // // function add(n1,n2){
+// // // // // //     return n1+n2
 
 // // // // // // }
 
+// // // // // // Main(sub,100,78)
 
-// // // // // // let newFunc =  () => {
-// // // // // //     console.log('arrow function')
-// // // // // // }
 
-// // // // // // let addstring = (a,b) =>{
-// // // // // //   return a+b;
-// // // // // // }
+// // // // // let student = {
+// // // // //     'my name': 'sai',
+// // // // //     rollno:37987983,
+// // // // //     giveExam :function(){
+// // // // //         console.log('exam is given')
+// // // // //     }, 
 
-// // // // // // apple('shubham')
-// // // // // // apple('Ayush')
-// // // // // // apple('Pavan')
-// // // // // // apple('Rohit')
-
-// // // // // // newFunc()
-
-// // // // //  // cb is my callback function passes as argument
-// // // // // function a(cb){
-// // // // //     let num = 90 + 90;
-
-// // // // //     let num2 = 180-90;
-
-// // // // //     cb()
+ 
 // // // // // }
 
-// // // // // function b(){
+// // // // // console.log(student['my name'])
 
-// // // // // console.log('function b is called')
-// // // // // }
-
-
-// // // // // function c(){
-// // // // //     console.log('function c is called')
-// // // // // }
-
-// // // // // function d(){
-// // // // //     console.log('function d is called')
-// // // // // }
-// // // // // a(b)
-// // // // // a(c)
-// // // // // a(d)
-
-// // // // // function Main(cb1, cb2, n1, n2){
-// // // // //     console.log('main function is called');
-// // // // //     console.log(cb1, cb2, n1,n2)
-// // // // //     cb1()
-// // // // //     cb2()
-// // // // // }
-
-// // // // // function yo(){
-// // // // //     console.log('s function is called')
-// // // // // }
-// // // // // function y(){
-// // // // //     console.log('no function is called')
-// // // // // }
-
-// // // // // Main(yo, y, 3,5)
+// // // // // console.log(student.name,  student.rollno)
 
 
-// // // // function Main(a,b,c){
-// // // //     let num = a(b,3);
-// // // //     let num2 = c(b,9);
-// // // //     console.log(num, num2)
+// // // // class Student{
+// // // //     constructor(name,rollno){
+// // // //         console.log('constuctor chal gya')
+// // // // this.name= name;
+// // // // this.rollno= rollno;
+// // // // this.school = 'DPS';
+// // // //     }
 // // // // }
 
-// // // // function add(n1,n2){
-// // // //     return n1+n2
+// // // // let student1 = new Student('arav', 7)
+// // // // let student2 = new Student('chetan', 17)
+// // // // console.log(student1, student2)
+// // // let c = {key : 10}
+// // // let a = {key : 10}
 
-// // // // }
+// // // console.log(c.key == a.key)
 
-// // // // Main(sub,100,78)
+
+// // // function writeMyName(){
+// // //     console.log('shubham')
+// // // }
+// // // writeMyName()
+
+// // // let func = function(arg1, arg2){
+// // //     console.log('shubham', arg1, arg2)
+// // // }
+// // // func(23, 45)
+
+
+// // let  greetPerson = (nameofThePerson, num) => {
+// //     console.log('hello ' + nameofThePerson, num)
+// // }
+
+// // greetPerson('shubham', 90)
+// // // greetPerson('pritam')
+// // // greetPerson('Rohit')
 
 
 // // // let student = {
-// // //     'my name': 'sai',
-// // //     rollno:37987983,
-// // //     giveExam :function(){
-// // //         console.log('exam is given')
-// // //     }, 
-
- 
+// // //     name : 'shubham',
+// // //     rollno : 10,
+// // //     school : 'DPS',
+// // //     giveExam: function(){
+// // //         console.log('exam chal gya')
+// // //     },
+// // //     playTennis : () =>{
+// // //         console.log('play tennis')
+// // //     }
 // // // }
 
-// // // console.log(student['my name'])
+// // // console.log(student, student.name, student.rollno, student.playTennis())
 
-// // // console.log(student.name,  student.rollno)
-
-
-// // class Student{
-// //     constructor(name,rollno){
-// //         console.log('constuctor chal gya')
-// // this.name= name;
-// // this.rollno= rollno;
-// // this.school = 'DPS';
-// //     }
-// // }
-
-// // let student1 = new Student('arav', 7)
-// // let student2 = new Student('chetan', 17)
-// // console.log(student1, student2)
-// let c = {key : 10}
-// let a = {key : 10}
-
-// console.log(c.key == a.key)
-
-
-// function writeMyName(){
-//     console.log('shubham')
+// function Main(cb, num1, num2){
+//     let sum = num1 + num2;
+//     console.log(sum);
+//     cb()
 // }
-// writeMyName()
 
-// let func = function(arg1, arg2){
-//     console.log('shubham', arg1, arg2)
+// function greetFunction(){
+//     console.log('hello')
 // }
-// func(23, 45)
 
+// function NewsFunc(){
+//     console.log('neindia won today')
+// }
 
-function greetPerson(nameofThePerson, num){
-    console.log('hello ' + nameofThePerson, num)
-}
+// function randomFunctio(){
+//     console.log('random function')
+//     console.log('random function')
+//     console.log('random function')
+//     console.log('random function')
+//     console.log('random function')
+//     console.log('random function')
+//     console.log('random function')
 
-greetPerson('shubham', 90)
-// greetPerson('pritam')
-// greetPerson('Rohit')
+//     let a = 89;
+//     let c = 77
+
+//     let ans  = a+c;
+
+    
+// }
+// // Main(greetFunction, 10, 20)
+// // Main(NewsFunc, 10, 20)
+// Main(randomFunctio, 10, 20)
