@@ -1,206 +1,56 @@
-// // // // // // // // // let a = 9; //stack
-
-// // // // // // // // // let b = 89;
+// // // let 
 
 
-// // // // // // // // // let obj1 = { a : 56}
+// // let arr = [1,2,3,4];
+// // let newArray = arr.map(cb);
 
-
-// // // // // // // // // let obj2 = obj1;
-
-// // // // // // // // // obj2.a = 1212;
-
-// // // // // // // // // console.log(obj1, obj2)
-
-
-
-// // // // // // // // // let obj1 = {key1:89, key2:23}
-// // // // // // // // // let obj2 = obj1;
-
-
-// // // // // // // // // obj2.key1 = 1212;
-
-// // // // // // // // // console.log(obj1, obj2)
-
-
-// // // // // // // // let apple = function Apple(name){
-
-// // // // // // // //     let nameString = 'my name is  :' + name;
-
-// // // // // // // //     console.log(nameString)
-
-// // // // // // // // }
-
-
-// // // // // // // // let newFunc =  () => {
-// // // // // // // //     console.log('arrow function')
-// // // // // // // // }
-
-// // // // // // // // let addstring = (a,b) =>{
-// // // // // // // //   return a+b;
-// // // // // // // // }
-
-// // // // // // // // apple('shubham')
-// // // // // // // // apple('Ayush')
-// // // // // // // // apple('Pavan')
-// // // // // // // // apple('Rohit')
-
-// // // // // // // // newFunc()
-
-// // // // // // //  // cb is my callback function passes as argument
-// // // // // // // function a(cb){
-// // // // // // //     let num = 90 + 90;
-
-// // // // // // //     let num2 = 180-90;
-
-// // // // // // //     cb()
-// // // // // // // }
-
-// // // // // // // function b(){
-
-// // // // // // // console.log('function b is called')
-// // // // // // // }
-
-
-// // // // // // // function c(){
-// // // // // // //     console.log('function c is called')
-// // // // // // // }
-
-// // // // // // // function d(){
-// // // // // // //     console.log('function d is called')
-// // // // // // // }
-// // // // // // // a(b)
-// // // // // // // a(c)
-// // // // // // // a(d)
-
-// // // // // // // function Main(cb1, cb2, n1, n2){
-// // // // // // //     console.log('main function is called');
-// // // // // // //     console.log(cb1, cb2, n1,n2)
-// // // // // // //     cb1()
-// // // // // // //     cb2()
-// // // // // // // }
-
-// // // // // // // function yo(){
-// // // // // // //     console.log('s function is called')
-// // // // // // // }
-// // // // // // // function y(){
-// // // // // // //     console.log('no function is called')
-// // // // // // // }
-
-// // // // // // // Main(yo, y, 3,5)
-
-
-// // // // // // function Main(a,b,c){
-// // // // // //     let num = a(b,3);
-// // // // // //     let num2 = c(b,9);
-// // // // // //     console.log(num, num2)
-// // // // // // }
-
-// // // // // // function add(n1,n2){
-// // // // // //     return n1+n2
-
-// // // // // // }
-
-// // // // // // Main(sub,100,78)
-
-
-// // // // // let student = {
-// // // // //     'my name': 'sai',
-// // // // //     rollno:37987983,
-// // // // //     giveExam :function(){
-// // // // //         console.log('exam is given')
-// // // // //     }, 
-
- 
-// // // // // }
-
-// // // // // console.log(student['my name'])
-
-// // // // // console.log(student.name,  student.rollno)
-
-
-// // // // class Student{
-// // // //     constructor(name,rollno){
-// // // //         console.log('constuctor chal gya')
-// // // // this.name= name;
-// // // // this.rollno= rollno;
-// // // // this.school = 'DPS';
-// // // //     }
-// // // // }
-
-// // // // let student1 = new Student('arav', 7)
-// // // // let student2 = new Student('chetan', 17)
-// // // // console.log(student1, student2)
-// // // let c = {key : 10}
-// // // let a = {key : 10}
-
-// // // console.log(c.key == a.key)
-
-
-// // // function writeMyName(){
-// // //     console.log('shubham')
-// // // }
-// // // writeMyName()
-
-// // // let func = function(arg1, arg2){
-// // //     console.log('shubham', arg1, arg2)
-// // // }
-// // // func(23, 45)
-
-
-// // let  greetPerson = (nameofThePerson, num) => {
-// //     console.log('hello ' + nameofThePerson, num)
+// // function cb(v){
+// //     console.log(v+100)
 // // }
 
-// // greetPerson('shubham', 90)
-// // // greetPerson('pritam')
-// // // greetPerson('Rohit')
 
+// let Inputarr = ['a', 'b', 1, 'f', 9, 'g']
 
-// // // let student = {
-// // //     name : 'shubham',
-// // //     rollno : 10,
-// // //     school : 'DPS',
-// // //     giveExam: function(){
-// // //         console.log('exam chal gya')
-// // //     },
-// // //     playTennis : () =>{
-// // //         console.log('play tennis')
-// // //     }
-// // // }
+// // op -> ['A','B', 'F', 'G']
 
-// // // console.log(student, student.name, student.rollno, student.playTennis())
+// //lets remove all the numbers -> filter out numbers from array
+// let allAlphas = Inputarr.filter(myCb)
 
-// function Main(cb, num1, num2){
-//     let sum = num1 + num2;
-//     console.log(sum);
-//     cb()
+// function myCb(v){
+//     if(typeof v == 'string') return true
+//     else return false
+
 // }
 
-// function greetFunction(){
-//     console.log('hello')
+
+// console.log(allAlphas)
+
+// let output = allAlphas.map(cb)
+
+// function cb(v){
+//     return v.toUpperCase();
 // }
+// console.log(output)
 
-// function NewsFunc(){
-//     console.log('neindia won today')
-// }
+const products = [
+    { name: 'Laptop', price: 1000 },
+    { name: 'Smartphone', price: 500 },
+    { name: 'Tablet', price: 800 },
+    { name: 'Monitor', price: 300 },
+    ];
+    let expensiveProducts = products.filter(cb)
 
-// function randomFunctio(){
-//     console.log('random function')
-//     console.log('random function')
-//     console.log('random function')
-//     console.log('random function')
-//     console.log('random function')
-//     console.log('random function')
-//     console.log('random function')
 
-//     let a = 89;
-//     let c = 77
+    function cb(v){
+       if(v.price > 300) return true
+       else return false
 
-//     let ans  = a+c;
+    }
 
-    
-// }
-// // Main(greetFunction, 10, 20)
-// // Main(NewsFunc, 10, 20)
-// Main(randomFunctio, 10, 20)
+    console.log(expensiveProducts)
+    // const output = [
+    //     { name: 'Laptop', price: 1000 },
+    //     { name: 'Smartphone', price: 500 },
+    //     { name: 'Tablet', price: 800 },
+     
+    //     ];
