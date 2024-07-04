@@ -174,3 +174,26 @@
 // }
 // let answer = emotify('make ke sad');
 // console.log(answer);
+
+
+let obj = {
+    'smile': ':)',
+    'sad': ':(',
+    
+}
+
+function emotify(str){
+    let arr = str.split(' ');
+    let ansArray = arr.map(v =>{
+        if(obj[v]){
+            return obj[v]
+        }else{
+            return v
+        }
+    })
+    return ansArray.join(' ')
+
+}
+
+let ans1 = emotify('make me sad');
+console.log(ans1);
